@@ -1,1 +1,34 @@
-site_name: My Docs
+site_name: 'サイトネーム'
+site_description: 'site description'
+site_author: 'site author'
+#site_url: 'site url'
+copyright: 'copyright'
+
+theme: 
+    name: 'material'
+    language: 'ja'
+    font:
+        text: "Noto Sans JP"
+        code: "Consolas"
+
+extra_css:
+    - "//fonts.googleapis.com/earlyaccess/notosansjp.css"
+    - "//fonts.googleapis.com/css?family=Open+Sans:600,800" 
+    - "css/custom.css"
+    - "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"
+
+extra: 
+    search:
+        language: 'jp'
+
+markdown_extensions:
+    - admonition
+    - fontawesome_markdown
+    - footnotes
+    - codehilite:
+        linenums: true
+        use_pygments: true
+        noclasses: true
+    - pymdownx.inlinehilite
+    - pymdownx.tasklist:
+        custom_checkbox: true
