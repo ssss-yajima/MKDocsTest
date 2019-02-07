@@ -1,0 +1,23 @@
+body {
+    font-family: "Noto Sans JP";
+}
+
+/* 見出し */
+.md-typeset h1 {
+  /*font-size: 24pt;*/
+  font-weight: bold;
+  color: #000;
+  border-bottom: solid 2px #f18b21;
+  padding-bottom: 5px;
+}
+.md-typeset h2 {
+  border-bottom: 1px dotted #888;
+}
+
+/* コードハイライト */
+.md-typeset .codehilitetable {
+  border-radius: 0;
+}
+.md-typeset .codehilitetable .linenodiv pre {
+  margin: 0;
+}
