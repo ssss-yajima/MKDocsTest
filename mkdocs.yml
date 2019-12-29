@@ -1,8 +1,8 @@
-site_name: 'サイトネーム'
-site_description: 'site description'
-site_author: 'site author'
+site_name: 'VSNote on MKDocs'
+# site_description: 'site description'
+# site_author: 'site author'
 #site_url: 'site url'
-copyright: 'copyright'
+# copyright: 'copyright'
 
 theme: 
     name: 'material'
@@ -10,20 +10,16 @@ theme:
     font:
         text: "Noto Sans JP"
         code: "Consolas"
-
-extra_css:
-    - "//fonts.googleapis.com/earlyaccess/notosansjp.css"
-    - "//fonts.googleapis.com/css?family=Open+Sans:600,800" 
-    - "css/custom.css"
-    - "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"
+    feature:
+        tabs: true
 
 extra: 
     search:
-        language: 'jp'
+        language: 'ja'
 
 markdown_extensions:
-    - admonition
-    - fontawesome_markdown
+    # - admonition
+    # - fontawesome_markdown
     - footnotes
     - codehilite:
         linenums: true
@@ -32,3 +28,17 @@ markdown_extensions:
     - pymdownx.inlinehilite
     - pymdownx.tasklist:
         custom_checkbox: true
+
+extra_css:
+    - "_css/custom.css"
+    - "//fonts.googleapis.com/earlyaccess/notosansjp.css"
+    - "//fonts.googleapis.com/css?family=Open+Sans:600,800" 
+    - "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"
+    - "https://unpkg.com/mermaid@8.0.0/dist/mermaid.css"
+
+extra_javascript:
+  - https://unpkg.com/mermaid@8.0.0/dist/mermaid.min.js
+
+markdown_extensions:
+  - plantuml_markdown:
+      server: http://www.plantuml.com/plantuml
