@@ -1,0 +1,18 @@
+on:
+  push:
+    branches:
+      - master
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
+      - run: pip install -r requirements.txt
+      - run: python -m pipenv run mkdocs build
+      - uses: peaceiris/actions-gh-pages@v3
+        with:
+          publish_branch: master
+          publish_dir: ./site
