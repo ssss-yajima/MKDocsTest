@@ -1,0 +1,478 @@
+
+
+
+<!doctype html>
+<html lang="ja" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.12">
+    
+    
+      
+        <title>DataRobotハンズオン - VSNote on MKDocs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4dd2dd8d.min.css">
+      
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,400,400i,700%7CConsolas&display=fallback">
+        <style>body,input{font-family:"Noto Sans JP",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Consolas",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../_css/custom.css">
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/notosansjp.css">
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:600,800">
+    
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    
+      <link rel="stylesheet" href="https://unpkg.com/mermaid@8.0.0/dist/mermaid.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#datarobot" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../.." title="VSNote on MKDocs" class="md-header-nav__button md-logo" aria-label="VSNote on MKDocs">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            VSNote on MKDocs
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              DataRobotハンズオン
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="VSNote on MKDocs" class="md-nav__button md-logo" aria-label="VSNote on MKDocs">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    VSNote on MKDocs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Welcome to MkDocs" class="md-nav__link">
+      Welcome to MkDocs
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../toplevel_1/" title="MkDocs練習帳" class="md-nav__link">
+      MkDocs練習帳
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Notes
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Notes" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Notes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="DataRobotハンズオン" class="md-nav__link md-nav__link--active">
+      DataRobotハンズオン
+    </a>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Git%E3%81%AE%E6%B4%BB%E7%94%A8%E6%96%B9%E6%B3%95%E3%81%BE%E3%81%A8%E3%82%81/" title="Gitの活用方法まとめ" class="md-nav__link">
+      Gitの活用方法まとめ
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../%E6%9B%B8%E7%B1%8D%EF%BC%9A%E3%83%88%E3%83%8B%E3%83%BC%E3%83%BB%E3%83%96%E3%82%B6%E3%83%B3%20%E9%A0%AD%E3%81%8C%E8%89%AF%E3%81%8F%E3%81%AA%E3%82%8B%E6%9C%AC/" title="書籍：トニー・ブザン 頭が良くなる本" class="md-nav__link">
+      書籍：トニー・ブザン 頭が良くなる本
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                <h1 id="datarobot">DataRobotハンズオン</h1>
+<p>作成日：2019/03/13</p>
+<hr />
+<h1 id="datarobot_1">DataRobotとは</h1>
+<p>藤井 製造業グローバルマネージャー</p>
+<p>DataRobotにはKaggleグランドマスターが世界で5〜6名在籍。
+そのノウハウを自動化した製品。kaggleから生まれた会社といえる。 
+データをドロップしたらモデル構築〜学習〜デプロイまで自動実行できる。 </p>
+<p>メジャーリーグの事例では、デトロイトが新選手が花形になるかの予測をしている。 
+メジャーは100年のデータを蓄積している。 </p>
+<p>日本の売上、特に製造業の比率が高い。
+異なる分野で月1回ペースでハンズオン開催予定。</p>
+<hr />
+<h1 id="_1">ハンズオン</h1>
+<p>山元祐也 製造業担当 </p>
+<h3 id="_2">概要説明</h3>
+<p>時系列予測はアドオン機能。追加費用が必要。 
+時系列分析(売上,需要,etc)には目的変数や説明変数に曜日性、周期性などがあり独特な前処理が必要。 
+DataRobotはある程度自動でやってくれる。 
+自動バックテストもできる。時系列を意識したデータ分割するなど。調整も可能。
+DL、回帰、決定技、XGBoost(Kaggleでメジャーなモデル)などを様々なパラメータや前処理と組み合わせて内包している </p>
+<p>標準だとAWSだがオンプレ版も用意している。 </p>
+<p>データから統計特徴量(平均,分散,最大最小,etc)は自動で作って可視化(グラフ作成)してくれる。 
+Pythonでもできるが手間がかかる部分。DataRobotだと楽。 
+通し番号、固定値、定数倍など意味を持たない特徴は自動で除去してくれる。 </p>
+<p>どの課題を時系列と見なすか、というのは考えどころで業務知識が必要。 
+物性など科学法則は時間に影響されない。 
+売上、需要などは時間に影響される。 
+不動産価格は特殊で中間。間取りなど物理的な特徴が効くが時間の影響もある。</p>
+<ul>
+<li>時系列モデリング：有料
+時間に応じた特徴生成してくれる。</li>
+<li>時間外検定：無料
+時間関係なく単なるテーブルデータとして処理する。 </li>
+</ul>
+<h3 id="_3">データの事前処理</h3>
+<p><strong>データ：KaggleのWalmart売上予測コンペのデータセット</strong></p>
+<p>今回のデータは店舗、部署、週別の売上データ。N週未来の売上を予測する。 </p>
+<p>祝日カレンダーなど、既知(未来でも不変)情報として追加することができる。
+今回の例だと、売上や天気はわからないが、店舗の面積や祝日フラグなどは事前に分かるので、既知として与える。</p>
+<h3 id="_4">モデリング実行</h3>
+<p>実行モード</p>
+<ul>
+<li>オートパイロット：自動で網羅的に実行</li>
+<li>クイック：部分的に実行。短時間。</li>
+<li>マニュアル：モデルが推薦されるので手で選択して実行。</li>
+</ul>
+<p>Q：周期性の幅を指定（8週間など）すると、それより長いスパンの特徴が落ちないか？
+去年のクリスマスのデータを今年のクリスマス予測に使うなどできなくなるのでは？
+A：時系列の統計特徴量を生成する際の範囲指定であって、特徴量エンジニアリング自体とは別。指摘の特徴はちゃんと作られる。 </p>
+<p>実行すると複数モデルが並列実行される。
+実行完了次第、モデルごとの評価値がランキング形式で表示される。
+時系列のベースモデルも提示する。※直近の値（先週の値）を返す。基礎的だがある程度精度が出る。</p>
+<p>Q：Dateも事前に既知なのでは？（ハンズオンで既知として指定しなかった）
+A：Date自体から時系列特徴生成するわけではないので、問題ない。
+既知か否かの設定は業務知識に基づく。間違える（知りえない情報を既知とする）と過剰適合する。</p>
+<p>モデルごとの変数重要度を可視化できる。
+重要度の仕組み：周辺化、marginalization
+対象の特徴以外の影響を除外して、対象の値を動かして変動幅を見る手法。</p>
+<h3 id="1">結果①</h3>
+<p>単純にモデルに投入するだけだと精度が上がらない。 </p>
+<h3 id="datarobot_2">DataRobotの追加説明</h3>
+<p><em>参考</em></p>
+<p>DataRobotブログ：https://blog.datarobot.com/jp</p>
+<p>何を予測したいかはビジネス上のニーズによる。
+予測問題に置いては精度良く予測できる予測単位(日、週、月、etc)が存在する。</p>
+<ul>
+<li>単位が大きすぎる＞情報が荒すぎて制度が出ない</li>
+<li>単位が小さすぎる＞ノイズが入る</li>
+<li><strong>ソリューション</strong></li>
+<li>小さい単位で予測して、予測結果を集約して特徴量として使う。(日々の売上予測から月の予測)</li>
+<li>大きな単位の予測と、小さな単位の予測/大きな単位 の割合から予測値とする（階層モデリング）</li>
+</ul>
+<h3 id="2">ハンズオン②：階層モデリング</h3>
+<p>同じデータで店舗別の売上予測＞店舗部門別の売上予測とする。 
+用意されたデータでハンズオン。作業自体は前半と同じ。</p>
+<ul>
+<li>部門別の集約されたデータでDataRobotを使って売上予測</li>
+<li>前半で作った予測値を元に、店舗ごとの部門売上比を作り、部門の予測値を按分</li>
+<li>手動で精度評価</li>
+</ul>
+<p>新規店舗などデータが蓄積されていない場合は、時系列予測から除外して、立地など他の要素から予測したほうがいい場合もある。
+精度が高いモデルがビジネス用途に合うとは限らない。解釈性を重視して施策を打ちたい、などモデル選択はビジネス用途による。</p>
+<p>Q：時系列データが不規則な場合はどうする？
+A：時系列が不規則すぎると、時系列として処理できなくなってくる。
+不規則性が強い場合、DataRobot側でアラートを表示する。
+製造業の場合、ショット数やサイクル数を扱いたい場合が多いと思う。その場合、行単位を時系列として扱うことができる。</p>
+<h3 id="tips">Tips</h3>
+<p>「どれくらいデータが必要か」という質問が多い。
+時系列に関してはデータが少ないと予測できないし、過剰に多いと精度が下がる場合がある。
+多ければいいとは限らない。情報が陳腐化する。例えば株価予測において100年前のデータは古すぎて使えない等。
+DataRobotではデータサイズごとの予測値を可視化できる。
+どれくらいデータを増やすと精度があがるか、または落ちるかザックリ見える。
+データの取得にも保管にもコストがかかるので、どれくらい保持するか考える必要がある。</p>
+<p>統計特徴量は自動で作られるが、単純なモノのみ。平均、最大、最小、etc
+高度な特徴量は手動で作る余地がある（特定サンプルから作成、指数移動平均、etc）</p>
+<p>学習・予測時にデータの置換が可能。
+例：在庫切れで売れなかったデータ＞過去の平均などの値で売上を補完する
+在庫があったら売れたはずなので、将来予測の上では売上ありと見なしたいという想定。
+これらの手動での処理は業務知識に大きく依存する。
+売上ゼロはなぜか？在庫がないのか、本当に売れなかったのか、など考える必要がある。</p>
+<p>時系列予測に置いてはデータごとの重み付けも有効。
+古いデータのウェイトを小さく、新しいデータのウェイトを大きくするなど。
+単純な処理はDataRobotのモデルにもある。高度なものは手動でやる必要がある。
+作成したモデルからシミュレーションが可能。例として、
+- 原材料の投入量で温度がどう変わるか
+- マーケティング費用の増減がどう影響するか</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../../toplevel_1/" title="MkDocs練習帳" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  前
+                </span>
+                MkDocs練習帳
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../Git%E3%81%AE%E6%B4%BB%E7%94%A8%E6%96%B9%E6%B3%95%E3%81%BE%E3%81%A8%E3%82%81/" title="Gitの活用方法まとめ" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  次
+                </span>
+                Gitの活用方法まとめ
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.3636a4ec.min.js"></script>
+      <script src="../../assets/javascripts/bundle.e9fe3281.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\u3000\u3001\u3002\uff0c\uff0e]+", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: [],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.5eca75d3.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+        <script src="https://unpkg.com/mermaid@8.0.0/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>
